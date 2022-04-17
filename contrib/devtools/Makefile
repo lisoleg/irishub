@@ -56,7 +56,7 @@ tools: statik golangci-lint proto-tools
 golangci-lint: $(GOLANGCI_LINT)
 $(GOLANGCI_LINT): $(mkfile_dir)/install-golangci-lint.sh
 	@echo "Installing golangci-lint..."
-	@bash $(mkfile_dir)/install-golangci-lint.sh $(TOOLS_DESTDIR) $(GOLANGCI_LINT_HASHSUM)
+	#@bash $(mkfile_dir)/install-golangci-lint.sh $(TOOLS_DESTDIR) $(GOLANGCI_LINT_HASHSUM)
 
 statik: $(STATIK)
 $(STATIK):
@@ -113,9 +113,5 @@ buf: buf-stamp
 
 buf-stamp:
 	@echo "Installing buf..."
-	@curl -sSL \
-    "https://github.com/bufbuild/buf/releases/download/v${BUF_VERSION}/buf-${UNAME_S}-${UNAME_M}" \
-    -o "${BIN}/buf" && \
-	chmod +x "${BIN}/buf"
 
 	touch $@

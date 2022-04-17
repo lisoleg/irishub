@@ -1,4 +1,4 @@
-package main
+package testain
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/snikch/goodman/transaction"
 )
 
-func main() {
+func testmain() {
 	// This must be compiled beforehand and given to dredd as parameter, in the meantime the server should be running
 	h := hooks.NewHooks()
 	server := hooks.NewServer(hooks.NewHooksRunner(h))
