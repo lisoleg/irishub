@@ -5,8 +5,6 @@ vendor
 build/
 .out
 docs/.vuepress/dist/
-node_modules/
-package.json
 yarn.lock
 dependency-graph.png
 mytestnet
