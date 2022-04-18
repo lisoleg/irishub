@@ -42,8 +42,8 @@ export default {
       apiNode: 'http://localhost:1317',
       rpcNode: 'http://localhost:26657',
       wsNode: 'ws://localhost:26657/websocket',
-      chainId: 'my-chain',
-      addrPrefix: 'cosmos',
+      chainId: 'irishub',
+      addrPrefix: 'iaa',
       sdkVersion: 'Stargate',
       getTXApi: 'http://localhost:26657/tx?hash=0x'
     })
