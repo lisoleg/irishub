@@ -147,7 +147,8 @@ const appName = "IrisApp"
 
 var (
 	// DefaultNodeHome default home directories for the application daemon
-	DefaultNodeHome string
+	DefaultNodeHome       string
+	DefaultKeyringBackend string
 
 	// Denominations can be 3 ~ 128 characters long and support letters, followed by either
 	// a letter, a number, ('-'), or a separator ('/').
@@ -317,7 +318,8 @@ func init() {
 		panic(err)
 	}
 
-	DefaultNodeHome = filepath.Join(userHomeDir, ".iris")
+	DefaultNodeHome = filepath.Join(userHomeDir, ".irishub")
+	DefaultKeyringBackend = "test"
 	owner, err := sdk.AccAddressFromBech32(nativeToken.Owner)
 	if err != nil {
 		panic(err)
