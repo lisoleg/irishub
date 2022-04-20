@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <SpNFTSend :address="address" :refresh="true" />
+      <SpNFTSend :address="address" v-show="address" :refresh="true" />
       <SpTransferList :address="address" v-show="address" />
     </div>
   </div>

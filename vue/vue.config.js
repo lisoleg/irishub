@@ -10,6 +10,7 @@ module.exports = {
         vue$: path.resolve('./node_modules/vue/dist/vue.esm-bundler.js'),
       },
     },
+    devtool: 'source-map',
     plugins: [new NodePolyfillPlugin()],
   },
 }
