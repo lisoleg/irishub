@@ -143,7 +143,7 @@ import (
 	tibckeeper "github.com/bianjieai/tibc-go/modules/tibc/core/keeper"
 )
 
-const appName = "IrisApp"
+const appName = "MetabApp"
 
 var (
 	// DefaultNodeHome default home directories for the application daemon
@@ -303,10 +303,10 @@ func init() {
 	sdk.SetCoinDenomRegex(DefaultCoinDenomRegex)
 
 	nativeToken = tokentypes.Token{
-		Symbol:        "iris",
-		Name:          "Irishub staking token",
+		Symbol:        "metab",
+		Name:          "metab staking token",
 		Scale:         6,
-		MinUnit:       "uiris",
+		MinUnit:       "metab",
 		InitialSupply: 2000000000,
 		MaxSupply:     10000000000,
 		Mintable:      true,
