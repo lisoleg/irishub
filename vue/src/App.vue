@@ -1,7 +1,7 @@
 <template>
   <div v-if="initialized">
     <SpWallet ref="wallet" v-on:dropdown-opened="$refs.menu.closeDropdown()" />
-    <SpLayout>
+    <SpLayout style="overflow-y:scroll;overflow-x:hidden;height:100%">
       <template v-slot:sidebar>
         <Sidebar />
       </template>
